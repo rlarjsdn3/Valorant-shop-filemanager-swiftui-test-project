@@ -13,8 +13,6 @@ struct DownloadsView: View {
     
     @EnvironmentObject var viewModel: ViewModel
     
-    @State private var progressValue: Float = 0.0
-    
     // MARK: - BODY
     
     var body: some View {

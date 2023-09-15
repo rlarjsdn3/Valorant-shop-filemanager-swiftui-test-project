@@ -26,10 +26,10 @@ final class ViewModel: ObservableObject {
     // MARK: - FUNCTIONS
     
     func downloadsSkin() async {
-        guard let weaponSkins = await resourceManager.fetchWeaponSkins() else { return }
-        DispatchQueue.main.async {
-            self.weaponSkins = weaponSkins
+        guard let weaponSkins = await resourceManager.fetchWeaponSkins() else {
+            return
         }
+        self.weaponSkins = weaponSkins
     }
     
     func downloadsImage() async {
@@ -58,16 +58,13 @@ final class ViewModel: ObservableObject {
             }
         }
         
-        DispatchQueue.main.async {
-            self.totalImageDownloadCount = notDownloadedImageIDs.count
-        }
+        // 다운로드 할 총 이미지 개수를 넘겨주기
+        self.totalImageDownloadCount = notDownloadedImageIDs.count
         
         // 대표 스킨 이미지를 다운로드하기
         for notDownloadedImageID in notDownloadedImageIDs {
-            DispatchQueue.main.async {
-                // 다운로드 진척도 갱신하기
-                self.downloadedImageCount += 1
-            }
+            // 다운로드 진척도 갱신하기
+            self.downloadedImageCount += 1
             // 이미지 데이터 페치하기
             if let imageData = await resourceManager.fetchImageData(notDownloadedImageID) {
                 // 경로 설정하기
