@@ -11,6 +11,10 @@
 		9EB4C5472AB43C1400AE4425 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB4C5462AB43C1400AE4425 /* ContentView.swift */; };
 		9EB4C5492AB43C1500AE4425 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EB4C5482AB43C1500AE4425 /* Assets.xcassets */; };
 		9EB4C54C2AB43C1500AE4425 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EB4C54B2AB43C1500AE4425 /* Preview Assets.xcassets */; };
+		9EB4C5552AB45CEC00AE4425 /* ResourceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB4C5542AB45CEC00AE4425 /* ResourceManager.swift */; };
+		9EB4C5582AB45D0300AE4425 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB4C5572AB45D0300AE4425 /* ViewModel.swift */; };
+		9EB4C55B2AB4628200AE4425 /* WeponSkins.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB4C55A2AB4628200AE4425 /* WeponSkins.swift */; };
+		9EB4C55D2AB469AE00AE4425 /* DownloadsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB4C55C2AB469AE00AE4425 /* DownloadsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		9EB4C5462AB43C1400AE4425 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9EB4C5482AB43C1500AE4425 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9EB4C54B2AB43C1500AE4425 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9EB4C5542AB45CEC00AE4425 /* ResourceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceManager.swift; sourceTree = "<group>"; };
+		9EB4C5572AB45D0300AE4425 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		9EB4C55A2AB4628200AE4425 /* WeponSkins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeponSkins.swift; sourceTree = "<group>"; };
+		9EB4C55C2AB469AE00AE4425 /* DownloadsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +60,10 @@
 			isa = PBXGroup;
 			children = (
 				9EB4C5442AB43C1400AE4425 /* ValorantShopFileManagerTestProjectApp.swift */,
-				9EB4C5462AB43C1400AE4425 /* ContentView.swift */,
+				9EB4C5522AB45CD800AE4425 /* Views */,
+				9EB4C5562AB45CF900AE4425 /* ViewModels */,
+				9EB4C5592AB4627900AE4425 /* Models */,
+				9EB4C5532AB45CE000AE4425 /* Managers */,
 				9EB4C5482AB43C1500AE4425 /* Assets.xcassets */,
 				9EB4C54A2AB43C1500AE4425 /* Preview Content */,
 			);
@@ -65,6 +76,39 @@
 				9EB4C54B2AB43C1500AE4425 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9EB4C5522AB45CD800AE4425 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9EB4C5462AB43C1400AE4425 /* ContentView.swift */,
+				9EB4C55C2AB469AE00AE4425 /* DownloadsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9EB4C5532AB45CE000AE4425 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				9EB4C5542AB45CEC00AE4425 /* ResourceManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		9EB4C5562AB45CF900AE4425 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				9EB4C5572AB45D0300AE4425 /* ViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		9EB4C5592AB4627900AE4425 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9EB4C55A2AB4628200AE4425 /* WeponSkins.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +182,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9EB4C5472AB43C1400AE4425 /* ContentView.swift in Sources */,
+				9EB4C5552AB45CEC00AE4425 /* ResourceManager.swift in Sources */,
+				9EB4C5582AB45D0300AE4425 /* ViewModel.swift in Sources */,
+				9EB4C55B2AB4628200AE4425 /* WeponSkins.swift in Sources */,
+				9EB4C55D2AB469AE00AE4425 /* DownloadsView.swift in Sources */,
 				9EB4C5452AB43C1400AE4425 /* ValorantShopFileManagerTestProjectApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
